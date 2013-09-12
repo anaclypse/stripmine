@@ -1,0 +1,8 @@
+# Ignore log files
+*.log
+
+#Ignore emacs backups
+*~
+
+#Ignore compiled python modules
+*.pyc

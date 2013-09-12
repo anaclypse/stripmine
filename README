@@ -1,0 +1,25 @@
+The purpose of this software is to provide centralized control and monitoring for cryptocoin mining operations.
+
+The structure of this tool consists of two independent parts:
+
+1. A daemon process that:
+   a) collects information and stores it into lightweight database files
+   b) configures and controls external mining applicattions and devices, e.g. cgminer
+   c) communicates via command line tools
+
+2. A GUI to interface with the daemon process, as an alternative to command line interaction
+
+The primary development platform for this software is currently raspberry pi. The GUI is structured as a web interface, with the intent that the system running the daemon will host a webserver to provide access to the GUI. Other configurations may be considered at a later time.
+
+---------------------------
+Dependencies:
+
+Python 2.7 must be installed on the system running the daemon
+
+To install the webui, see the webui subdirectory for instructions and install scripts
+
+---------------------------
+Configuring and Running the Daemon
+
+
+--------------------------
