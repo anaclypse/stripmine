@@ -63,7 +63,7 @@ def main(argv):
     parser.add_argument('-q', '--query', dest='queries', action='append', metavar="LIST", default=[],
                         help='query the given command with list or nested list of keys')
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     if args.command:
         comm_ip = default_api_ip
@@ -94,5 +94,5 @@ def main(argv):
         print "List of available commands:"
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main(sys.argv[1:])
 
